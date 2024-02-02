@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+body {
+  background-color: aqua;
+}
+
+/*abuelo  este nuetro header */
+header{
+  position:fixed;
+  width: 100%;
+  height: auto;
+  background-color: #333131;
+}
+
+  /* nuestro enlace */
+header a{
+  color: aqua;
+}
+
+/*dandole una clase desde script y dandole propiedades */
+header.sticky{
+  height: 75px;
+  background: #111;
+  width: 100%;
+  z-index: 100;
+}
+/*dandole una clase desde script y dandole propiedades a nustro enlaces  */
+
+header.sticky a{
+  position: relative;
+  color: aliceblue;
+  left: 105px;
+  
+}
+/*dandole una clase desde script y dandole propiedades a nustro logo  */
+
+header.sticky .logo-tex{
+  position: relative;
+  right: 105px;
+}
+
+
+/*padre*/
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10%;
+  transition: all 1s ease;
+}
+
+
+
+
+/*hijo1*/
+
+
+.logo-tex {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: aliceblue;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  object-fit: cover;
+}
+
+.logo-tex:hover{
+    color: rgb(243, 149, 8);
+    transform: scale(1.1);
+}
+
+/*hijo2*/
+.enlaces {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    letter-spacing: 1px;
+    font-size: 25px;
+  
+   
+  }
+  
+  .enlaces  a:hover{
+    color: rgb(243, 149, 8);
+    transform: scale(1.3);
+  
+
+ }
+ /*que es  sofware */
+
+
+ 
+ .sofware{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 25px;
+  position: relative;
+  top: 65px;
+ }
+
+
+ /*clases de sofware */
+
+ .clses-sofware2{
+  color: rgb(247, 78, 11);
+ }
+ .clases-sofware{
+  width: 455px;
+  height: 165px;
+  border: 2px solid #000;
+  position: relative;   
+  top: 145px;
+  left: 405px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,10);
+  transition: all 1s ease;
+ }
+ .clases-sofware:hover{
+  transform: scale(1.1);
+
+ }
+
+
+ /* definicioon de un sofware   */
+
+
+ .divicion-sofware{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+position: relative;
+top: 225px;
+
+}
+
+
+
+
+ .sistema{
+  width: 305px;
+  height: 410px;
+  left: 95px;
+  border: 2px solid #000;
+  box-shadow: 0 0 2px rgba(0,0,2);  
+  position: relative;
+  border-radius: 10px;
+  transition: all 1s ease;
+  
+  
+ }
+ .sistema:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0,0,17);
+
+
+ }
+
+ .sistema1{
+  color: rgb(212, 8, 8);
+  text-transform: uppercase;
+
+ }
+ /*fin clases de sofawer*/
+
+
+ /*internet   y sus arreglos  */
+.internet{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  top: 355px;
+  font-weight: 100;
+}
+
+.internet-1{
+  position: relative;
+  top: 45px;
+  left: 405px;
+  border: 2px solid #000;
+  width: 445px;
+  height:205px;
+  color: rgb(247, 78, 11);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,17);
+ transition: all 1s ease;
+  
+
+}
+.internet-1:hover{
+  transform: scale(1.1);
+}
+
+.internet-tex{
+  color: #000;
+}
+.clases-internet{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5px;
+  padding: 25px;
+  
+  position: relative;
+  left: 145px;
+  top: 145px;
+  
+  
+}
+.tel-text{
+  width: 645px;
+  height: 265px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,17);
+ transition: all 1s ease;
+ display: grid;
+ place-content: center center;
+}
+.telefono{
+  width: 300px;
+  height: 200px;
+}
+
+
+
+
+/*inicio*/
+.mover{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+
+}
+.cuadro-principal{
+  width: 300px;
+  height: 50px;
+  border: 3px solid #000;
+  position: relative;
+  top: 555px;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  left: 805px;
+}
+.vertical-principal{
+  width: 1px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  top: 15px;
+  left: 110px;
+}
+/*mapa consectual   izquierda*/
+ .vertical{
+  width: 1045px;
+  height: 2px;
+  border: 1px solid #000;
+  position: relative;
+  top: 645px;
+  left: 395px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ /*2 vertical de lado a lado */
+ .vertical1{
+  width: 645px;
+  height: 2px;
+  border: 1px solid #000;
+  position: relative;
+  top: 45px;
+  right: 290px;
+  display: flex;
+  
+ }
+
+/*cuadro1*/
+.cuadrado1{
+  width: 180px;
+  height: 45px;
+  border: 3px solid #000;
+  position: relative;
+  top: 55px;
+  right: 90px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(218, 34, 34);
+}
+.horizontal2{
+  width: 1px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  top: 54px;
+  left: 90px;
+}
+/*primer cuadrado  sistema de sofware*/
+.vertical3{
+  width: 2px;
+  height: 50px;
+  border: 2px solid #000;
+  position: relative;
+  top: 5px;
+  
+  
+}
+.cuadro2{
+  width: 180px;
+  height: 85px;
+  border: 3px solid #000;
+  position: relative;
+  top: 55px;
+  right: 90px;
+}
+
+.img1{
+  width: 180px;
+  height: 145px;
+  position: relative;
+  top: 45px;
+}
+
+
+/*sofware de aplicacion */
+/*segundo cuatro */
+.horizontal4{
+  width: 1px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  bottom: 295px;
+  left: 400px;
+}
+
+
+.cuadro3{
+  width: 180px;
+  height: 95px;
+  border: 3px solid #000;
+  position: relative;
+  right: 90px;
+  top: 40px;
+}
+
+.img2{
+  width: 175px;
+  height: 145px;
+  position: relative;
+  top: 45px;
+}
+
+/*tercer cuadro  sofware de desarollo*/
+
+.horizontal5{
+  width: 1px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  bottom: 265px;
+  left: 410px;
+}
+
+.cuadro4{
+  width: 230px;
+  height: 190px;
+  border: 3px solid #000;
+  position: relative;
+  top: 50px;
+  right: 100px;
+}
+
+
+.img3{
+  width: 220px;
+  height: 145px;
+  position: relative;
+  top: 45px;
+}
+
+
+
+
+
+/*primer cuadro de derecha */
+.horizontal7{
+  width: 2px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  top: 45px;
+  left: 95px;
+
+}
+/*cuadron de internet*/
+.cuadro6{
+  width: 180px;
+  height: 45px;
+  border: 3px solid #000;
+  position: relative;
+  top: 705px;
+  left: 145px;
+  text-align: center;
+  color: rgb(231, 18, 18);
+  font-size: 25px;
+ 
+ 
+}
+
+
+.vertical4{
+
+  width: 800px;
+  height: 2px;
+  border: 1px solid #000;
+  position: relative;
+  top: 50px;
+  right: 305px;
+  
+}
+.horizontal8{
+  width: 2px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  
+  top: 4px;
+}
+.cuadro7{
+  width: 200px;
+  height: 45px;
+  border: 3px solid #000;
+  position: relative;
+  right: 85px;
+  top: 55px;
+ 
+ 
+}
+
+.img4{
+  width: 195px;
+  height: 145px;
+  position: relative;
+  top: 25px;
+}
+
+/*cable de fibra optico*/
+.horizontal9{
+  width: 2px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  left: 285px;
+  bottom: 230px;
+  
+}
+.cuadro8{
+  width: 180px;
+  height: 65px;
+  border: 3px solid #000;
+  position: relative;
+  top: 55px;
+  right: 85px;
+  
+ 
+ 
+}
+
+.img5{
+width: 180px;
+height: 145px;
+position: relative;
+top: 25px;
+
+}
+
+/*satelital*/
+.horizontal10{
+  width: 2px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  left: 285px;
+  bottom: 270px;
+  
+}
+.cuadro9{
+  width: 180px;
+  height: 65px;
+  border: 3px solid #000;
+  position: relative;
+  top: 55px;
+  right: 85px;
+  
+ 
+ 
+}
+
+.img6{
+width: 180px;
+height: 145px;
+position: relative;
+top: 45px;
+
+}
+
+/*redes inalambricas*/
+.horizontal11{
+  width: 2px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  left: 285px;
+  bottom: 238px;
+  
+}
+.cuadro10{
+  width: 180px;
+  height: 89px;
+  border: 3px solid #000;
+  position: relative;
+  top: 55px;
+  right: 85px;
+  
+ 
+ 
+}
+
+.img7{
+width: 180px;
+height: 145px;
+position: relative;
+top: 45px;
+
+}
+
+/*electricas */
+.horizontal12{
+  width: 2px;
+  height: 45px;
+  border: 2px solid #000;
+  position: relative;
+  left: 285px;
+  bottom: 270px;
+  
+}
+.cuadro11{
+  width: 180px;
+  height: 65px;
+  border: 3px solid #000;
+  position: relative;
+  top: 55px;
+  right: 85px;
+  
+ 
+ 
+}
+
+.img8{
+width: 180px;
+height: 145px;
+position: relative;
+top: 55px;
+
+}
+
+
+
